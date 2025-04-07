@@ -7,7 +7,7 @@ def say_hello():
 
 @app.route('/')
 def index():
-    message = say_hello()  # نادينا الدالة
+    message = say_hello()
     return render_template('index.html', msg=message)
 
 if __name__ == '__main__':
