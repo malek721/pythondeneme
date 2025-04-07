@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # 4. تثبيت المتطلبات
-RUN pip install requests beautifulsoup4 python-dotenv
+RUN pip install -r requirements.txt
 
 # 5. فتح المنفذ 5000 (افتراضي لـ Flask)
 EXPOSE 5000
